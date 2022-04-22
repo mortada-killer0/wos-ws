@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- stylesheets -->
+    <link rel="stylesheet" type="text/css" href="shared/elements/gaia-theme/gaia-theme.css">
+    <link rel="stylesheet" type="text/css" href="shared/elements/gaia-icons/gaia-icons.css">
+    <link rel="stylesheet" type="text/css" href="shared/style/layout.css">
+    <link rel="stylesheet" type="text/css" href="shared/style/headers.css">
+    <link rel="stylesheet" type="text/css" href="shared/style/toolbars.css">
+    <link rel="stylesheet" type="text/css" href="shared/style/progress_activity.css">
+    <link rel="stylesheet" type="text/css" href="style/main.css">
+    <link rel="stylesheet" type="text/css" href="style/lists.css">
+    <link rel="stylesheet" type="text/css" href="style/webapp.css">
+
+    <!-- Web Components -->
+    <script defer type="text/javascript" src="shared/js/l10n.js"></script>
+    <script defer type="text/javascript" src="js/main.js"></script>
+    <script defer type="text/javascript" src="js/store.js"></script>
+  </head>
+  <body class="vbox skin-organic">
+    <section role="region" id="root" class="vbox fit">
+      <header>
+        <a href="#" class="icon icon-menu"></a>
+        <h1>Marketplace</h1>
+      </header>
+      <section id="home" class="gaia-list active fit scroll" aria-selected="true">
+        <div class="webapps">
+          <div id="communication" class="category">
+            <header>Communication</header>
+            <ul></ul>
+          </div>
+          <div id="education" class="category">
+            <header>Education</header>
+            <ul></ul>
+          </div>
+          <div id="games" class="category">
+            <header>Games</header>
+            <ul></ul>
+          </div>
+          <div id="health" class="category">
+            <header>Health</header>
+            <ul></ul>
+          </div>
+          <div id="multimedia" class="category">
+            <header>Multimedia</header>
+            <ul></ul>
+          </div>
+          <div id="news" class="category">
+            <header>News</header>
+            <ul></ul>
+          </div>
+          <div id="search" class="category">
+            <header>Search</header>
+            <ul></ul>
+          </div>
+          <div id="social" class="category">
+            <header>Social</header>
+            <ul></ul>
+          </div>
+          <div id="travel" class="category">
+            <header>Travel</header>
+            <ul></ul>
+          </div>
+          <div id="utility" class="category">
+            <header>Utility</header>
+            <ul></ul>
+          </div>
+        </div>
+      </section>
+      <section id="featured" class="gaia-list fit">
+        <ul>
+          <li>
+            <h1>Coming Soon...</h1>
+          </li>
+        </ul>
+      </section>
+      <section id="personal" class="gaia-list fit">
+        <ul>
+          <li>
+            <h1>Coming Soon...</h1>
+          </li>
+        </ul>
+      </section>
+      <section id="options" class="gaia-list active fit">
+        <ul>
+          <li data-icon="download">Downloads</li>
+          <li data-icon="compose">Shopping List</li>
+          <li data-icon="settings">Settings</li>
+        </ul>
+      </section>
+      <section id="loading-screen" class="gaia-list active fit">
+        <progress></progress>
+        <p>Please wait...</p>
+      </section>
+      <footer role="toolbar">
+        <button id="home-button" data-icon="home" aria-selected="true">Home</button>
+        <button id="featured-button" data-icon="auto-enhance-spark">Featured</button>
+        <button id="personal-button" data-icon="user">Personal</button>
+        <button id="options-button" data-icon="more">Options</button>
+      </footer>
+    </section>
+
+    <section role="region" id="webapp" class="vbox scroll">
+      <section class="gaia-list fit">
+        <div class="webapp-keyart">
+          <div class="webapp-icon"></div>
+        </div>
+        <p class="webapp-title">App</p>
+        <p class="webapp-category">Utility</p>
+        <p class="webapp-author">Mort</p>
+        <ul>
+          <li class="webapp-detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+          cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+          proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</li>
+          <li>
+            <button class="webapp-install">Install</button>
+          </li>
+        </ul>
+        <header>Screenshots</header>
+        <ul class="webapp-screenshots"></ul>
+      </section>
+    </section>
+  </body>
+</html>

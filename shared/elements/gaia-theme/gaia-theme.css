@@ -1,0 +1,248 @@
+/*
+Gaia theme variables
+*/
+
+:root {
+
+  /** Accent Color
+   ---------------------------------------------------------*/
+
+  --accent-color: #0061e0;
+  --accent-color-plus: #80b9ff;
+  --accent-color-minus: #003178;
+
+  /** Statusbar Filter
+   ---------------------------------------------------------*/
+
+  --statusbar-filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='invert'><feColorMatrix in='SourceGraphic' color-interpolation-filters='sRGB' type='matrix' values='1 -1 0.3019 0 0 0 0.3019 0 0 0 0 0 0.3019 0 0 0 0 0 1 0'/></filter></svg>#invert");
+
+  /** Grey Colors
+   ---------------------------------------------------------*/
+
+  --color-alpha: #333333;
+  --color-beta: #ffffff;
+  --color-gamma: #4d4d4d;
+  --color-delta: #5f5f5f;
+  --color-epsilon: #858585;
+  --color-zeta: #a6a6a6;
+  --color-eta: #c7c9cc;
+  --color-theta: #e7e9ec;
+  --color-iota: #f4f4f4;
+
+  /** Brand Colors
+   ---------------------------------------------------------*/
+
+  --color-darkblue: #00539f;
+  --color-blue: #00caf2;
+  --color-turquoise: #27c8c2;
+  --color-darkorange: #e66000;
+  --color-orange: #ff9500;
+  --color-yellow: #ffcb00;
+  --color-violet: #c40c84;
+
+  --color-warning: #fbbd3c;
+  --color-destructive: #e2443a;
+  --color-preffered: #00ba91;
+
+  /** Background
+   ---------------------------------------------------------*/
+
+  --background: #e7e9ec;
+  --background-plus: #fff;
+  --background-minus: #a6a8ab;
+
+  /** Text Color
+   ---------------------------------------------------------*/
+
+  --text-color: #333;
+  --text-color-minus: #fff;
+
+  /** Button
+   ---------------------------------------------------------*/
+
+  --button-background: #e0e2e5;
+
+  /** Links
+   ---------------------------------------------------------*/
+
+  --link-color: var(--accent-color);
+
+  /** Inputs
+   ---------------------------------------------------------*/
+
+  --input-background: #fff;
+  --input-color: #333;
+  --input-clear-background: #909ca7;
+
+  /** Buttons
+   ---------------------------------------------------------*/
+
+  --button-box-shadow:
+    inset 0 -1px 0 #d8dadd,
+    inset 0 1px 0 #eeeeee;
+  --button-box-shadow-active: var(--button-box-shadow);
+
+  /** Header
+   ---------------------------------------------------------*/
+
+  --header-disabled-button-color: rgba(255,255,255,0.3);
+
+  /** WOS Palettes
+   ---------------------------------------------------------*/
+
+  --background-alpha: #b0b2b5;
+  --background-beta: #ffffff;
+  --background-gamma: #b9bbbe;
+  --background-delta: #c0c2c5;
+  --background-epsilon: #c7c9cc;
+  --background-zeta: #d0d2d5;
+  --background-eta: #d8dadd;
+  --background-theta: #e0e2e5;
+  --background-iota: #e7e9ec;
+
+  --translucent: rgba(0,0,0,0.125);
+  --translucent-plus: rgba(0,0,0,0.25);
+  --translucent-minus: rgba(0,0,0,0.5);
+}
+
+
+.theme-productivity {
+
+  /** Brand Color
+   ---------------------------------------------------------*/
+
+  --highlight-color: var(--color-orange);
+
+  /** Header
+   ---------------------------------------------------------*/
+
+  --header-background: var(--highlight-color);
+  --header-color: var(--color-beta);
+  --header-icon-color: var(--color-beta);
+}
+
+.theme-communications {
+
+  /** Brand Color
+   ---------------------------------------------------------*/
+
+  --highlight-color: var(--color-turquoise);
+
+  /** Links
+   ---------------------------------------------------------*/
+
+  --link-color: #177874;
+
+  /** Header
+   ---------------------------------------------------------*/
+
+  --header-background: var(--highlight-color);
+  --header-color: var(--color-beta);
+  --header-icon-color: var(--color-beta);
+  --header-button-color: var(--link-color);
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  :root {
+
+    /** Accent Color
+    ---------------------------------------------------------*/
+
+    --accent-color: #00ddff;
+    --accent-color-plus: #80edff;
+    --accent-color-minus: #00778f;
+
+    /** Statusbar Filter
+    ---------------------------------------------------------*/
+
+    --statusbar-filter: none;
+
+    /** Grey Colors
+    ---------------------------------------------------------*/
+
+    --color-alpha: #333333;
+    --color-beta: #ffffff;
+    --color-gamma: #4d4d4d;
+    --color-delta: #5f5f5f;
+    --color-epsilon: #858585;
+    --color-zeta: #a6a6a6;
+    --color-eta: #c7c9cc;
+    --color-theta: #e7e9ec;
+    --color-iota: #f4f4f4;
+
+  /** Brand Colors
+  ---------------------------------------------------------*/
+
+    --color-darkblue: #00539f;
+    --color-blue: #00caf2;
+    --color-turquoise: #27c8c2;
+    --color-darkorange: #e66000;
+    --color-orange: #ff9500;
+    --color-yellow: #ffcb00;
+    --color-violet: #c40c84;
+
+    --color-warning: #fbbd3c;
+    --color-destructive: #e2443a;
+    --color-preffered: #00ba91;
+
+    /** Background
+    ---------------------------------------------------------*/
+
+    --background: #282c30;
+    --background-plus: #303438;
+    --background-minus: #a6a6a6;
+
+    /** Text Color
+    ---------------------------------------------------------*/
+
+    --text-color: #fff;
+    --text-color-minus: #333;
+
+    /** Button
+    ---------------------------------------------------------*/
+
+    --button-background: #404448;
+
+    /** Links
+    ---------------------------------------------------------*/
+
+    --link-color: var(--accent-color);
+
+    /** Inputs
+    ---------------------------------------------------------*/
+
+    --input-background: #23222b;
+    --input-color: #fff;
+    --input-clear-background: #7c7b82;
+
+    /** Buttons
+    ---------------------------------------------------------*/
+
+    --button-box-shadow:
+      inset 0 -1px 0 #d8dadd,
+      inset 0 1px 0 #eeeeee;
+    --button-box-shadow-active: var(--button-box-shadow);
+
+    /** Header
+    ---------------------------------------------------------*/
+
+    --header-disabled-button-color: rgba(0,0,0,0.3);
+
+    /** WOS Palettes
+    ---------------------------------------------------------*/
+
+    --background-alpha: #000408;
+    --background-beta: #303438;
+    --background-gamma: #04080c;
+    --background-delta: #080c10;
+    --background-epsilon: #0cf014;
+    --background-zeta: #101418;
+    --background-eta: #181c20;
+    --background-theta: #202428;
+    --background-iota: #282c30;
+
+    --translucent: rgba(255,255,255,0.125);
+    --translucent-plus: rgba(255,255,255,0.25);
+    --translucent-minus: rgba(255,255,255,0.5);
+  }
+}

@@ -1,0 +1,86 @@
+#webapp {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 5rem;
+  bottom: 0;
+  z-index: 8;
+  background: var(--background, #e7e7e7);
+  display: none;
+}
+
+#webapp.visible {
+  display: flex;
+}
+
+#webapp .webapp-keyart {
+  --color: #00a8e8;
+  position: relative;
+  height: 25%;
+  background: linear-gradient(-45deg, transparent, var(--color));
+  margin-bottom: 6rem;
+}
+
+#webapp section > *:not(.webapp-keyart),
+#webapp section .webapp-keyart > .webapp-icon {
+  animation: showWebappInfo 1s cubic-bezier(0.2, 0.9, 0.1, 1);
+}
+
+@keyframes showWebappInfo {
+  from {
+    transform: translateY(128px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#webapp .webapp-keyart > .webapp-icon {
+  position: absolute;
+  left: calc(50% - 4rem);
+  width: 8rem;
+  height: 8rem;
+  border-radius: 2rem;
+  background: #fff no-repeat center / 6rem;
+  top: calc(100% - 4rem);
+  box-shadow: 0 0.5rem 1em rgba(0,0,0,0.1);
+}
+
+#webapp .webapp-title {
+  font-size: 2.4rem;
+  text-align: center;
+  margin: 1rem 0;
+}
+
+#webapp .webapp-category {
+  font-size: 1.6rem;
+  text-align: center;
+  margin: 1rem 0;
+  color: #858585;
+}
+
+#webapp .webapp-author {
+  font-size: 1.6rem;
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  color: var(--accent-color, #0061e0);
+}
+
+#webapp .webapp-screenshots {
+  display: flex;
+  flex-wrap: nowrap;
+  height: 200px;
+  margin: 1rem auto;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+}
+
+#webapp .webapp-screenshots img {
+  float: left;
+  border-right: solid 0.1rem var(--background, #e7e7e7);
+}

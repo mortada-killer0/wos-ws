@@ -1,0 +1,73 @@
+/* ----------------------------------
+* Toolbars
+* ---------------------------------- */
+
+[role="toolbar"] {
+  display: flex;
+  box-sizing: border-box;
+  height: 45px;
+  width: 100%;
+  background: #e0e2e5;
+  border-top: 1px solid #e7e9ec;
+  padding-right: 0.4rem;
+}
+
+[role="toolbar"] button,
+[role="toolbar"] a {
+  position: relative;
+  flex: 1;
+  border: none;
+  background: transparent no-repeat;
+  margin: 0.4rem 0 0.4rem 0.4rem;
+  padding: 0;
+  text-align: center;
+  color: #333;
+  border-radius: 0.4rem;
+  height: calc(100% - 0.8rem);
+  font-size: 0;
+  box-shadow: none;
+}
+
+[role="toolbar"] button:hover,
+[role="toolbar"] a:hover {
+  background-color: rgba(0,0,0,0.125);
+}
+
+[role="toolbar"] button:active,
+[role="toolbar"] a:active {
+  background-color: rgba(0,0,0,0.25);
+}
+
+[role="toolbar"] [data-icon] {
+  font-size: 0;
+}
+
+[role="toolbar"] [data-icon]:before {
+  font-size: 2.4rem;
+  position: relative;
+  margin: 0;
+  line-height: 3.7rem;
+  top: unset;
+}
+
+@media screen and (prefers-color-scheme: dark) {
+  [role="toolbar"] {
+    background-color: #404448;
+    border-top-color: #383c40;
+  }
+
+  [role="toolbar"] button,
+  [role="toolbar"] a {
+    color: #fff;
+  }
+
+  [role="toolbar"] button:hover,
+  [role="toolbar"] a:hover {
+    background-color: rgba(255,255,255,0.125);
+  }
+
+  [role="toolbar"] button:active,
+  [role="toolbar"] a:active {
+    background-color: rgba(255,255,255,0.25);
+  }
+}
